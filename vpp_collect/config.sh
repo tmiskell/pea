@@ -14,8 +14,7 @@ ssd_cache_bytes_used=proxy.process.cache.bytes_used
 cache_hit_mem_tol=0.50
 cache_hit_mem_ratio=proxy.node.cache_hit_mem_ratio
 client_conn=proxy.process.http.current_client_connections
-num_runs=1
-ssd_warm_time=960
-ram_warm_time=840
-read_time=1200
-write_time=720
+# VPP collection specific variables
+sec_per_min=60
+write_time=$((30*sec_per_min))
+read_time=$((20*sec_per_min))
